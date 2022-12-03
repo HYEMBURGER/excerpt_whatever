@@ -11,6 +11,5 @@ function submitEvent(event) {
 
   // hidden input
   idForm.classList.add("hidden");
-}
-
+  
 idForm.addEventListener("submit", submitEvent);
