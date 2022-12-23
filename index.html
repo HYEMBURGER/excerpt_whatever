@@ -8,20 +8,27 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  
-  <!--greeting-->
-  <h1 id="greeting"></h1>
-  
-  <!--ID(NAME)-->
-  <form id="id-form">
-    <input type="text" id="id-input" placeholder="당신의 이름을 알려주세요." required />
-  </form>
 
-  <!--write-->
-  <form id="wirte-form">
-    <textarea type="text" id="write-input" placeholder="당신의 마음을 흔든 문장은 무엇인가요?" required></textarea>
-    <input type="submit" value="기록" />
-  </form>
+  <header>
+    <span>반가워요</span>
+  </header>
+
+  <div class="frame">
+
+    <div class="center">
+
+      <div class="greeting">
+        <h1>아름다운 문장, 제가 기억하고 있을게요.</h1>
+      </div>
+
+      <form action="" id="loginForm" class="loginForm">
+        <input type="text" id="idInput" placeholder="이름을 입력하세요" required />
+        <input type="password" id="pwInput" placeholder="비밀번호를 입력하세요" required />
+        <button>시작</button>
+      </form>
+
+    </div>
+  </div>
 
   <script src="js/login.js"></script>
   <script src="js/write.js"></script>

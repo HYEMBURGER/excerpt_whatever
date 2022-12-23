@@ -1,15 +1,13 @@
-const idForm = document.querySelector("#id-form");
-const idInput = document.querySelector("#id-input");
-const greeting = document.querySelector("#greeting");
+const loginForm = document.querySelector("#loginForm");
+const idInput = document.querySelector("#idInput");
+const pwInput = document.querySelector("#pwInput");
 
-// stop Refresh
 function submitEvent(event) {
   event.preventDefault();
+}
 
-  // write greeting
-  greeting.innerText = `Hello ${idInput.value} ! Welcome to this page !`;
+if (localStorage.getItem("userId") === null) {
+  console.log("아이디가 없습니다!");
+}
 
-  // hidden input
-  idForm.classList.add("hidden");
-  
-idForm.addEventListener("submit", submitEvent);
+loginForm.addEventListener("sumbmit", submitEvent);
